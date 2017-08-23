@@ -39,7 +39,6 @@ module Aliyun
           'AccessKeyId' => configuration.access_key_id,
           'Action' => configuration.action,
           'Format' => configuration.format,
-          'TemplateParam' => message_param,
           'PhoneNumbers' => mobile_num,
           'RegionId' => configuration.region_id,
           'SignName' => configuration.sign_name,
@@ -47,6 +46,7 @@ module Aliyun
           'SignatureNonce' => seed_signature_nonce,
           'SignatureVersion' => configuration.signature_version,
           'TemplateCode' => template_code,
+          'TemplateParam' => message_param,
           'Timestamp' => seed_timestamp,
           'Version' => configuration.sms_version,
         }
