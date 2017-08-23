@@ -39,8 +39,8 @@ module Aliyun
           'AccessKeyId' => configuration.access_key_id,
           'Action' => configuration.action,
           'Format' => configuration.format,
-          'ParamString' => message_param,
-          'RecNum' => mobile_num,
+          'TemplateParam' => message_param,
+          'PhoneNumbers' => mobile_num,
           'RegionId' => configuration.region_id,
           'SignName' => configuration.sign_name,
           'SignatureMethod' => configuration.signature_method,
@@ -114,6 +114,6 @@ module Aliyun
       end
 
     end
-    
+
   end
 end
